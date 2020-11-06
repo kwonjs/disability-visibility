@@ -1,0 +1,242 @@
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+p, ul {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+#gallery, #conclusion, #resources {
+  padding-top: 50px;
+}
+
+/* #buttons */
+
+button {
+  font-size: 13px;
+}
+
+button:hover {
+  outline-color: red;
+  outline-width: 5px;
+}
+
+/*header and footer div*/
+
+#title {
+  background-color: #d1eee9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#credits {
+  background-color: #d1eee9;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/*Audio player related*/
+
+#player {
+  display: block;
+  margin: auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/**ALL CSS FOR CAROUSEL - CREDITS TO W3C**/
+
+/* .carousel */
+
+.carousel .carousel-inner {
+  position: relative;
+}
+
+.carousel .carousel-item {
+  display: none;
+  margin: auto;
+  max-height: 500px;
+  max-width: 1000px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel .carousel-item.active {
+  display: block;
+}
+
+/* More like bootstrap, less accessible */
+
+.carousel .carousel-items {
+  border: solid 2px transparent;
+}
+
+.carousel .carousel-items.focus {
+  border-color: white;
+  outline: solid 3px #005a9c;
+}
+
+.carousel .carousel-item .carousel-image a img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel .carousel-item .carousel-caption a {
+  text-decoration: underline;
+}
+
+.carousel .carousel-item .carousel-caption a,
+.carousel .carousel-item .carousel-caption span.contrast {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  /*border-radius: 5px;*/
+  border: 2px solid transparent;
+  margin: 0;
+}
+
+.carousel .carousel-item .carousel-caption h3 a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.carousel .carousel-item .carousel-caption a:hover,
+.carousel .carousel-item .carousel-caption span.contrast:hover {
+  background-color: rgba(0, 0, 0, 1);
+  margin: 0;
+}
+
+.carousel .carousel-item .carousel-caption a:focus {
+  background-color: rgba(0, 0, 0, 1);
+  border-color: #fff;
+  margin: 0;
+}
+
+.carousel .carousel-item .carousel-caption p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.carousel .carousel-item .carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  left: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Shared CSS for Pause, Next and Previous Slide Controls */
+
+.carousel .controls button {
+  padding: 0;
+  position: absolute;
+  /*top: 5px;*/
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.carousel .controls button svg rect.background {
+  stroke: black;
+  fill: black;
+  stroke-width: 1px;
+  opacity: 0.6;
+}
+
+.carousel .controls button svg rect.border {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 2px;
+}
+
+/* Next and Previous Slide Controls */
+
+.carousel .controls button svg polygon {
+  stroke: white;
+  fill: white;
+  stroke-width: 2;
+  opacity: 1;
+}
+
+.carousel .controls button.previous {
+  left: 2.5%;
+  bottom: 1%;
+}
+
+.carousel .controls button.next {
+  left: 90%;
+  bottom: 1%;
+}
+
+/* Pause Control */
+
+.carousel .controls button.rotation {
+  left: 2.5%;
+  top: 3%;
+}
+
+@media all and (min-width: 1000px) {
+  .carousel .controls button.previous {
+    left: 16%;
+  }
+  .carousel .controls button.next {
+    left: 80%;
+  }
+  .carousel .controls button.rotation {
+    left: 16%;
+  }
+}
+
+.carousel .controls button.rotation svg polygon.pause {
+  stroke-width: 4;
+  fill: transparent;
+  stroke: transparent;
+}
+
+.carousel .controls button.rotation svg polygon.play {
+  stroke-width: 1;
+  fill: transparent;
+  stroke: transparent;
+}
+
+.carousel .controls button.rotation.pause svg polygon.pause,
+.carousel .controls button.rotation.play svg polygon.play {
+  fill: white;
+  stroke: white;
+}
+
+/* Common focus styling for svg buttons */
+
+.carousel .controls button:focus rect.background,
+.carousel .controls button:hover rect.background,
+.carousel .controls button:focus rect.border,
+.carousel .controls button:hover rect.border {
+  fill: #00d1c0;
+  stroke: #00d1c0;
+  opacity: 1;
+}
+
+.carousel .controls button:focus rect.border {
+  stroke: white;
+}
