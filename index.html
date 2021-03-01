@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta char = "utf-8">
+		<title>A Tribute to Disability Visibility</title>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet"> 
+		<link rel = "stylesheet" href = "style.css">
+		<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">-->
+		<!--Carousel-->
+		<script src = "carousel.js"></script>
+		<script src = "carouselItem.js"></script>
+		<script src = "carouselButtons.js"></script>
+		<script src = "pauseButton.js"></script>
+		<!--audio player-->
+		<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+		<script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
+		<!--<script src = "https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
+		<script src = "https://unpkg.com/plyr@3"></script>-->
+
+	</head>
+
+	<body>
+		<div id = "title">
+			<h1>Learning from disabled folks </br> on how to dream of and carry out </br>a kinder and more accessible world</h1>
+			<p>by Jenny Kwon (they/she)</p>
+		</div>
+
+		<h2 style = "padding-top: 30px;">Introduction</h2>
+		<p>I began reading <i>Disability Visibility</i> in the summer after seeing Alice Wong's Twitter announcement that the anthology had finally been published. I always look for ways I can better learn about disability justice, and I consider myself incredibly lucky to live in an era where I can learn about perspectives from social media platforms like Twitter, a platform that disability activists have used for years now to connect and mobilize. However, reading so many different perspectives from a single disability-centered anthology is something I had yet to do. I realized, to a lesser degree than Alice and all the writers who contributed to the anthology, that <i>Disability Visibility</i> was revolutionary in putting disabled voices and dreams into modern mainstream media, and I was incredibly excited to take a deep dive.</p>
+
+		<p>In the gallery below (in the form of an accesible carousel), I have illustrated my interpretation of six stories that touched me and impacted my view of what constitutes disability justice and <strong>what is needed to create a kinder and more accessible world</strong>. These stories include: "Six Ways of Looking at Crip Time" by Ellen Samuels, "The Beauty of Spaces Created for and by Disabled People" by s.e. smith, "How to Make a Paper Crane from Rage" by Elsa Sjunneson, "Nurturing Black Disabled Joy" by Keah Brown, "I am too pretty for Ugly Laws" (a poem by Lateef McLeod embedded in the story "Gaining Power through Communication Access"), and "I'm Tired of Chasing a Cure" by Liz Moore.</p>
+
+
+		<h2 id = "gallery">Gallery</h2>
+		<p style = "text-align: center; color: red;"><i>Gallery trigger warnings: motifs of anxiety and 'curing' disability</i></p>
+
+		<section id="myCarousel"
+         class="carousel"
+         aria-roledescription="carousel"
+         aria-label="Highlighted stories from Disability Visability">
+
+		  <div class="carousel-inner">
+		    <div class="controls">
+		      <button class="rotation pause" aria-label="Stop automatic slide show">
+		        <svg width="40"	
+		             height="36"
+		             version="1.1"
+		             xmlns="http://www.w3.org/2000/svg">
+		          <!--orig. rect background & border: rx and ry = 5, orig background width: 38, height: 24-->
+		          <rect class="background"
+		                x="2"
+		                y="2"
+		                width="42"
+		                height="38"></rect>
+		          <rect class="border"
+		                x="2.7"
+		                y="2.7"
+		                width="36"
+		                height="31"></rect>
+		          <!-- orig: 17 8 17 24-->
+		          <polygon class="pause" points="17 11 17 25"></polygon>
+		          <!-- orig: 24 8 24 24-->
+		          <polygon class="pause" points="24 11 24 25"></polygon>
+		          <!-- orig: 15 8 15 20 27 14-->
+		          <polygon class="play" points="15 11 15 25 27 18"></polygon>
+		        </svg>
+		      </button>
+		      <button class="previous"
+		              aria-controls="myCarousel-items"
+		              aria-label="Previous Slide">
+		        <!--orig dim: width: 42, height: 34-->
+		        <svg width="60"
+		             height="40"
+		             version="1.1"
+		             xmlns="http://www.w3.org/2000/svg">
+		          <!--orig. rect background & border: rx and ry = 5-->
+		          <!--orig dim: width: 38, height: 24-->
+		          <rect class="background"
+		                x="2"
+		                y="2"
+		                width="55"
+		                height="30"></rect>
+		          <rect class="border"
+		                x="4"
+		                y="4"
+		                width="50"
+		                height="26"></rect>
+		          <!--orig dim: 9 14 21 8 21 11 33 11 33 17 21 17 21 20-->
+		          <polygon points="15 17 25 10 25 13 44 13 44 20 25 20 25 24"></polygon>
+		        </svg>
+		      </button>
+		      <button class="next"
+		              aria-controls="myCarousel-items"
+		              aria-label="Next Slide">
+		        <!--orig dim: width: 42, height: 34-->
+		        <svg width="60"
+		             height="40"
+		             version="1.1"
+		             xmlns="http://www.w3.org/2000/svg">
+		          <!--orig. rect background & border: rx and ry = 5-->
+		          <!--orig dim: width: 38, height: 24-->
+		          <rect class="background"
+		                x="2"
+		                y="2"
+		                width="55"
+		                height="30"></rect>
+		          <!--orig dim: width: 34, height: 20-->
+		          <rect class="border"
+		                x="4"
+		                y="4"
+		                width="50"
+		                height="26"></rect>
+		          <!--orig dim: 9 11 21 11 21 8 33 14 21 20 21 17 9 17-->
+		          <polygon points="15 14 33 14 33 10 44 17 33 24 33 20 15 20"></polygon>
+		        </svg>
+		      </button>
+		    </div>
+
+		    <div id="myCarousel-items"
+		         class="carousel-items"
+		         aria-live="off">
+
+		      <!-- .item -->
+		      <div class="carousel-item active"
+		           role="group"
+		           aria-roledescription="slide"
+		           aria-label="1 of 6">
+		        <div class="carousel-image">
+		          <a href="#">
+		            <img src="https://raw.githubusercontent.com/kwonjs/disability-visibility/main/media/disabled_blackjoy.png" alt="Keah Brown on celebrating Black disabled joy">
+		          </a>
+		        </div>
+		        <div class="carousel-caption">
+		          <!--<h3>
+		            <a id="carousel-label-4">
+		              Celebrating Black disabled joy by existing and taking space - Keah Brown
+		            </a>
+		          </h3>-->
+		          <div>
+		            <p>
+		              <span class="contrast">
+		                Celebrating Black disabled joy by existing and taking space - Keah Brown
+		              </span>
+		            </p>
+		          </div>
+		        </div>
+		        <!-- .carousel-caption -->
+		      </div>
+		      <!-- .item -->
+
+		      <div class="carousel-item"
+		           role="group"
+		           aria-roledescription="slide"
+		           aria-label="2 of 6">
+		        <div class="carousel-image">
+		          <a href="#">
+		            <img src="https://raw.githubusercontent.com/kwonjs/disability-visibility/main/media/disability_chasingcure.png" alt="Being too tired to chase a cure - perspectives from Liz Moore">
+		          </a>
+		        </div>
+		        <div class="carousel-caption">
+		          <!--<h3>
+		            <a href="#" id="carousel-label-6">
+		              Insert here
+		            </a>
+		          </h3>-->
+		          <div class="hidden-xs hidden-sm">
+		            <p>
+		              <span class="contrast">
+		                I'm tired of chasing a cure - Liz Moore
+		              </span>
+		            </p>
+		          </div>
+		        </div>
+		        <!-- .carousel-caption -->
+		      </div>
+		      <!-- .item -->
+
+		      <!-- .item -->
+		      <div class="carousel-item"
+		           role="group"
+		           aria-roledescription="slide"
+		           aria-label="3 of 6">
+		        <div class="carousel-image">
+		          <a href="#">
+		            <img src="https://raw.githubusercontent.com/kwonjs/disability-visibility/main/media/disability_ragecrane.png" alt="Step by step instructions on how to construct a paper crane from queer disabled rage">
+		          </a>
+		        </div>
+		        <div class="carousel-caption">
+		          <!--<h3>
+		            <a id="carousel-label-3">
+		            </a>
+		          </h3>-->
+		          <div>
+		          	<p>
+		          		<span class = "contrast">
+		          			Step by step instructions on making a paper crane from queer disabled rage - Elsa Sjunneson
+		          		</span>
+		          	</p>
+		          </div>
+		        </div>
+		    </div>
+		        <!-- .carousel-caption -->
+		      <div class="carousel-item"
+		           role="group"
+		           aria-roledescription="slide"
+		           aria-label="4 of 6">
+		        <div class="carousel-image">
+		          <img src="https://raw.githubusercontent.com/kwonjs/disability-visibility/main/media/disability_toopretty.png" alt="A poem by Lateef McLeod on being too pretty for Ugly Laws.">
+		        </div>
+		        <div class="carousel-caption">
+		          <!--<h3>
+		            <a id="carousel-label-5">
+		              Insert here
+		            </a>-->
+		          </h3>
+		          <div>
+		          	<p>
+		          		<span class="contrast">
+		                I am too pretty for Ugly Laws - Lateef McLeod
+		              </span>
+		          </p>
+		          </div>
+		        </div>
+		        <!-- .carousel-caption -->
+		      </div>
+		      <!-- .item -->
+
+		      <div class="carousel-item"
+		           role="group"
+		           aria-roledescription="slide"
+		           aria-label="5 of 6">
+		        <div class="carousel-image">
+		          <a href="#">
+		            <img src="https://raw.githubusercontent.com/kwonjs/disability-visibility/main/media/disability_criptime.png" alt="An illustration of crip time intepretation by Ellen Samuels">
+		          </a>
+		        </div>
+		        <div class="carousel-caption">
+		          <!--<h3>
+		            <a id="carousel-label-1">
+		              Crip time - Ellen Samuels
+		            </a>
+		          </h3>-->
+		          <div class="hidden-xs hidden-sm">
+		            <p>
+		              <span class="contrast">
+		                Reimagining time as crip time and listen to your bodymind - Ellen Samuels
+		              </span>
+		            </p>
+		          </div>
+		        </div>
+		        <!-- .carousel-caption -->
+		      </div>
+
+		      <!-- .item -->
+		      <div class="carousel-item"
+		           role="group"
+		           aria-roledescription="slide"
+		           aria-label="6 of 6">
+
+		        <div class="carousel-image">
+		          <a href="#">
+		            <img src="https://raw.githubusercontent.com/kwonjs/disability-visibility/main/media/disability_cripspace.png" alt="An illustration of crip space - performance art - interpretation by s.e. smith">
+		          </a>
+		        </div>
+
+		        <div class="carousel-caption">
+		          <!--<h3>
+		            <a id="carousel-label-2">
+		              Crip space, crip performance, crip art - s.e. smith 
+		            </a>
+		          </h3>-->
+		          <div>
+		            <p>
+		              <span class="contrast">
+		                Going beyond the ableist standards of performance art and  celebrating crip space - s.e. smith
+		              </span>
+		            </p>
+		          </div>
+		        </div>
+		        <!-- .carousel-caption -->
+		      </div>
+		    <!--.item-->
+
+		    </div>
+		  </div>
+		  <!-- carousel-inner -->
+		</section>
+		<!-- /.carousel -->
+		<div class="col-sm-1"></div>
+
+		<h3 style = "padding-top: 20px">Text descriptions and reasons for highlighting these pieces</br>click on a name to jump down to the description</h3>
+
+		<h3 id = "buttons" style = "padding-bottom: 30px"><a href = "#keah"><button>Keah Brown</button></a> <a href = "#liz"><button>Liz Moore</button></a>  <a href = "#elsa"><button>Elsa Sjunneson</button></a>  <a href = "#lateef"><button>Lateef McLeod</button></a>  <a href = "#ellen"><button>Ellen Samuels</button></a>  <a href = "#smith"><button>s.e. smith</button></a> </h3>
+
+		<h4 id = "keah">Nurturing Black Disabled Joy by Keah Brown</h4>
+
+		<p>Brown, Keah. "Nurturing Black Disabled Joy." <i>Disability Visibility</i>, edited by Alice Wong, Vintage Books, 2020, pp. 117-120.</p>
+
+		<p><i>Image caption: A portrait of Keah Brown's face overlays a blue background. She is smiling and wearing blue frames. Above her green text reads "My joy is my freedom." Beside her is the hashtag "#DisabledAndCute," a viral hashtag she coined in 2017. Beside the hashtag is light blue text that reads "Deserve to be seen" and orange text that says "Living unapologetically." A text bubble on the right coming from Keah's mouth reads "I wanted to celebrate how I finally felt, in this black and disabled body, I , too, deserved joy" (Brown 118). To her left there is a yellow bubble with blue text inside that reads "the reality of disability and joy means accepting that not every day is good but every day has openings for small pockets of joy" with a literal green pocket containing a purple heart above the text (Brown 119).</i></p>
+		
+		<p>In a gallery centering disabled voices, it's especially important to highlight Black disabled voices. Like almost all mainstream spheres of life in the U.S., the disability activist/organizer community, as Keah Brown also mentions, is incredibly white-dominated. Additionally, disability has historically been presented in the media as equivalent to suffering and being a worse alternative to death (ideas stemming from deeply-rooted eugenics ideology). I intentionally started the gallery with Keah's face and her piece on Black disabled joy to combat these two phenomena. Living and thriving have so many different meanings to disabled folks and mainstream media and the rest of society needs to understand and highlight these meanings and narratives instead of pushing the same, tired, ableist and unimaginative stereotypes of disabled folks.</p>
+
+		<h4 id = "liz">I'm Tired of Chasing a Cure by Liz Moore</h4>
+
+		<p>Moore, Liz. "I'm Tired of Chasing a Cure." <i>Disability Visibility</i>, edited by Alice Wong, Vintage Books, 2020, pp. 75-81.</p>
+
+		<p><i>Image caption: A face is viewed from the bottom up - with the nostrils and chin visible but not the rest of the face. The background is orange and dotted with pink and red pills and light orange pill bottles. The face is cradled by two hands, and it is crying a stream of blue tears with the words "i'm tired" running down the face. Crowning the head is red spikes to represent headache/splitting pain. To the left, a blue speech bubble reads "Are you going to wish for a cure?". To the right, a bright green speech bubble reads "have you tried have you tried have you tried have you tried" to represent the onslaught of of advice from abled folks to 'cure' Liz's chronic illness/disability. </i></p>
+
+		<p>The art style is purposefully messy, scratchy and imprecise in this piece. I wanted to convey the rawness I felt in reading this narrative - the raw frustration of being constantly redirected to a new cure, constantly gaslighted by medical professionals after revealing inner struggles, and constantly receiving unwanted and unsolicited advice from abled people who act as if they not only know more, but also as if every trick in the oudated book hasn't already been tried. This piece is a self reflection and an introspection that lets Liz and the readers to slow down and ask themselves: What do they really want? Is it a cure to chronic illness and disability? Is it worth constantly striving for a kind of normalcy that they most likely will not return to? Out of all six pieces, this piece touches most directly on the way the medical model of disability can contribute to internalized ableism and limit the ways disabled and abled folks dream on how to 'better' their own lives. "There is a high cost to pursuing miracle cures," Liz notes, and it illustrates how unforgiving our current society is on disabled bodies and souls and also how unaccepting society is. Liz asks why we can't try acceptance - acceptance of "battered" and "broken" beings. Acceptance in the form of communal support and love. This is what is necessry to survive, because Liz knows that if she continues her pursuit to find cures to her connective tissue disorder and "achieve the person" she once was, she will miss the person she has become (Moore 81). </p>
+
+		<h4 id = "elsa">How to Make a Paper Crane from Rage by Elsa Sjunneson</h4>
+
+		<p>Sjunneson, Elsa. "How to Make a Paper Crane from Rage." <i>Disability Visibility</i>, edited by Alice Wong, Vintage Books, 2020, pp. 134-140.</p>
+
+		<audio id="player" controls>
+			<source type="audio/mpeg" src="https://raw.githubusercontent.com/kwonjs/disability-visibility/main/media/mp3_ragepapercrane.mp3"/>
+		</audio>
+
+		<p><i>Image caption: This is a step-by-step  illustration of the literal and figurative steps to folding a paper crane of queer disabled rage. There is an <strong>audio description</strong> of the art above, read as a spoken word poem - unfortunately, I am currently still working on making this player keyboard accessible.</i></p>
+
+		<p>It's exhausting to even survive in spite of and against ableism. Queer disabled rage stems from a society that continually places expectations on queer disabled folks, expecting them to conform in order for society to see them as members of society. Social media has allowed the disability community to extend farther and connect with each other on a wider level, but at a cost: the rage, especially queer disabled rage, and other raw emotions that disabled activists, writers and people have can be more easily co-opted and used against them. In this piece, Elsa discusses how her rage has turned more strategic, utilizing her being vulnerable about her identity, background and struggles to "shift perception of disability," see disabled folks like Elsa as whole, and push for change (Sjunneson 139). Her writing is expertly crafted and purposeful, and she can take control of how she presents herself and how to use her voice. Elsa is by far not the only one who is an activist or advocate who expresses herself in this way. The rest of society's duty is to listen to the "radical vulnerability" and receive the paper cranes hiding the years of rage borne from ableism and painful events (137).</p>
+
+		<h4 id = "lateef"> I Am Too Pretty for Some 'Ugly Laws' by Lateef McLeod</h4>
+
+		<p>McLeod, Lateef. "I Am Too Pretty for Some 'Ugly Laws.'" 2018. <i>Lateef.</i></p>
+
+		<p><i>Image caption: Lateef is wearing a blue suit and tie and is resting underneath a dark green tree with extended gnarled branches. In flowing text, the words "I am too pretty for some Ugly Laws" float above and underneath the branches. "too pretty" and "Ugly Laws" are in pink and red respectively while the rest of the words are in yellow. Typed, white-text snippets of his poem read below: "Too smooth to be shut in. Too smart and eclectic for any box you put me in...You can stare at me all you want. No cop will bust in my head and carry me away to an institution. No doctor will diagnose me a helpless invalid with an incurable disease." The last verse of his poem is handwritten in different colors: "My roots are like a hundred-year-old tree. I will stay right here to glare at your ugly face, too" (McLeod 226). </i></p>
+
+		<p>This is my favorite poem in this anthology. I absolutely love its confidence and refusal to back down in the face of ableism. "Ugly" policies and laws like Chicago's policy in 1967 that "any person who is diseased, maimed, mutilated...deformed so as ot be an unsightly or disgusting object...shall not theirein or thereon expose himself oto public view..." were meant to shame, dehumanize and further isolate disabled folks (McLeod 226). Despite structural and ideological attempts to shame disability perspectives away, Lateef holds his ground, firmly stating that his roots are "like a hundred-year-old tree" and that he will stay to glare at their ugly face (226). Reading words like these makes me even further convinced that disabled folks, especially QTPOC disabled folks, have and should be leading the forefront of the movement towards accessibility. The rest of society misses out on the sheer resilience disabled folks have (and I understand that this word holds mixed connotations for many - because it is the harmful ableist society that pushes people to be resilient in the first place).</p>
+
+		<h4 id = "ellen">Six Ways of Looking at Crip Time by Ellen Samuels</h4>
+
+		<p>Samuels, Ellen. "Six Ways of Looking at Crip Time." <i>Disability Visibility</i>, edited by Alice Wong, Vintage Books, 2020, pp. 189-196.</p>
+
+		<p><i>Image caption: The painting is split between the left and right. On the left side, the background includes both a shining yellow sun with a skyblue background and a moon with a dark blue sky and pouring rain. The green words "Listen to the" surround Ellen's figure. Ellen has her eyes closed and is hugging herself. On her body there are the pink words "body mind." The whole sentence reads "Listen to the body mind." Her torso hovers over a clock with the blue words "Take the time you need." Ellen is gripping the two red clock hands in her hand. On the right side is a representation of the current capitalist system that this piece indirectly critiques. The office buildings representing the dominating corporate culture have a human arm (the collective 'arms' of all the workers they exploit and the arms of CEOs and millionaires and billionaires) manipulating a pink clock shaped like a gear. This clock represents how time works in our ableist society. An email appears to "me" from "my boss" saying "Hey, I expected this 2 days ago. Where is it? Why are you taking so long?" Purple calendar sheets go by indicating the ableist passsage of time. Text messages in purple and green read "hey, you're late" and "expect this to dock your pay. next time, you're fired."</i></p>
+
+		<p>As someone who struggles with anxiety and with over-extending themselves, this piece was one of the most impactful pieces I read in the anthology and one of my favorites. In a world that constantly asks us to stay overtime, go above and beyond and work ourselves to the bone, reimagining how we can re-orient our lives around a different structure of time itself is revolutionary. This idea of 'crip time' and listening to your 'bodymind' in of itself is resistance and a clear example of why ANY kind of push towards social change should not only include but also be led by disabled folks. The experiences of nondisabled folks would not allow for dreaming of a radical concept like crip time, which encompasses self care, self love and being in tune with yourself before doing anything for anyone else. I cried a little in relief after reading this piece because it provided me an answer outside of the capitalist system to questions about 'work-life balance' and 'burnout' that really concerned more about self-care and being able to survive and thrive.</p>
+
+		<p>That being said, Ellen's piece on crip time isn't just about how society needs to reimagine time as a form of providing accessibility and fostering self-love and community sustainability. Crip time is "time travel," in how outwardly young bodies can have the "impairments of old age" (Samuels 190). Crip time is "grief time" and how time slows down when we lose loved ones and we enter a state of grief and have a strong desire to warp time to flit between the past and present (192). Crip time is "broken time" in its insistence for bodyminds to take breaks - which to me was the framing that left the deepest impression on me - and for us to stop pushing our bodies "away from us while also pushing [them] beyond [their] limits" (192). Crip time is "sick time," which never bodes well in our capitalist society when sick time means less opportunity for companies to profit and more opportunity to lose jobs (194). Crip time is "writing time" for Ellen and "vampire time" in the way bodyminds refuse to bend to the will of a scheduled, strict world. Crip time is a lifestyle. Nondisabled folks should listen to disabled folks on how to incorporate crip time into society to make our world more accessible and kind not only to each other but also ourselves.</p>
+
+		<h4 id = "smith">The Beauty of Spaces Created for and by Disabled People by s.e. smith </h4>
+
+		<p>smith, s.e. "The Beauty of Spaces Created for and by Disabled People." <i>Disability Visibility</i>, edited by Alice Wong, Vintage Books, 2020, pp. 271-275.</p>
+
+		<p><i>Image caption: There is a slanted aerial view of the stage of "Descent," a piece choreographed and performed by Alice Sheppard and Laurel Lawson. The two performers elegantly wheel around each other as hanging lights surround them. The stage is colored in dark blue and green swirls. Behind them rests a blue ramp. Music plays in the air - represented by colorful notes decorating the stage. The phrase "crip space" is written in light green on the stage. At a 90 degree angle on the front-facing portion of the stage, the phrase "space by us, for us" is written in light purple. An ASL interpreter stands in front of the stage, dressed in all black and signing. Three people sit at the front as they observe and marvel at the performance. All three are thinking the same thought: the bold yellow words "For ME." drift in a blue cloud. </i></p>
+
+		<p>For the millenia that disabled folks have been excluded from mainstream media and practically all spheres of abled society, it should not be surprising that there are disabled-centered spaces where folks have the ability to live and thrive as they are. I always try and remind myself how lucky I am to even be informed of organizations like Sins Invalid, take space in crip spaces and watch performances by and for the disabled community. I admire the way s.e. smith discusses the necessity of these spaces, stating how others taking offense at the existence of performance spaces like the one illustrated is why they're needed, because "as long as claiming our own ground is treated as an act of hostility, we need our ground" (smith 274). These spaces are respites from the soul-sucking, ableist society outside - this is illustrated at the end of smith's piece when they have to get back home via BART and the elevaors "are, as usual, out of order" (275). It's ridiculous to demand the non-existence and refusal to understand the necessity and empowerment performance spaces provide when disabled folks can barely use public goods and services.</p>
+
+		<p>When communities strive for cross-cultural unity and disability solidarity, how are they able to cultivate spaces where "everyone has that soaring sense of inclusion" and are able to have "difficult and meaningful conversations"? How are we able to do this? s.e. smith brings up these thought-provoking broad questions that should be considered when dreaming and building towards a kinder and more accessible world. One thing is certain: refusing to "consider the diversity of human experience" and promoting exclusion will only decrease accessibility (274).</p>
+
+		<h2 id = "conclusion">Concluding notes</h2>
+
+		<p>All pieces from <i>Disability Visibility</i> impacted me in some profound way. There were people who I wanted to highlight but didn't have capacity or time to do so, such as Stacey Park Milbern, an incredible queer Korean disabled activist who passed away this year. Hearing her speak and looking through the hashtag #WhatStaceyTaughtMe made me emotional - not in the inspiration porn-esque way - because other than Stacey and a few other folks, I rarely see Korean and Korean diasporic representation as I dive into disability justice. </p> 
+
+		<p>There were also pieces that I so desperately wanted to create art from and visualize somehow. Some that were so, so important to me and fit the theme of "dreaming of a kinder, more accessible world," however, didn't feel right creating art for. One of these pieces was Leah Lakshmi Piepzna-Samarasinha's piece "Still Dreaming Wild Disability Justice Dreams at the End of the World." Leah's work centers queer trans mixed-race and diasporic South Asians and Sri Lankan people of color and abuse survivors. The events she describes in her poem, "Psych Survivors Know," for the "people in the ICE concentration camps" deliver gritty, raw and real emotions and feelings that I don't believe art could convey any better. Organizing in the harshest conditions in settler-colonialist U.S. is extremely far from the traditional view of organizing. Inevitably, when I draw my interpretations of these stories that I as a reader have had the privilege of reading, I put my own inherently ableist spin on it. Even if I don't mean it, my own lived experiences will never do justice to the visions that disabled folks have for a world that truly meets their needs. Nevertheless, even if an artistic interpretation of Leah's piece isn't in the gallery, I consider hers the piece in <i>Disability Visibility</i> that talks the most about what a crip future looks like and how grassroots organizations are already building towards this future. </p>
+
+		<p>It's also incredibly important to mention that many of the concepts that narratives within <i>Disability Visibility</i> highlight, such as communal living, mutual aid and crip time, are not achievable in our current capitalist system that prioritizes output and profit over people. Ableism has existed much longer than capitalism, but capitalism continues to perpetuate ableism. It is not a coincidence whatsoever that many disability justice groups incorporate abolition into their community care and organizing work. This is more of a personal take, but the more I learn about disability justice, the more I realize that policies that would be labeled by some as "radical" are not so radical when they are the ones meeting the needs of folks with various disabilities. </p>
+
+		<h2 id = "resources">Additional resources to continue a disability justice-oriented education</h2>
+
+		<ul style = "margin-bottom: 90px;">
+			<li><a href = "https://www.autistichoya.com/p/ableist-words-and-terms-to-avoid.html">Ableist Words to Avoid</a> - an incredible list of words, their connotations and alternatives compiled by Lydia X. Z. Brown, aka Autistic Hoya. While Lydia gives several disclaimers that suggest checking in with folks first regarding their personal language use preferences, since phrases considered offensive to some may not be offensive to others, this list does show how deeply rooted ableism still is in our language and slang. </li>
+			<li><a href = "https://www.sinsinvalid.org/">Sins Invalid</a> - "a disability justice performance project that centers people of color, queers, nonbinary and trans people with disabilities." They also have <a href = "https://www.sinsinvalid.org/blog/10-principles-of-disability-justice">a list of principles of disability justice</a> that is incredibly worth reading over and keeping in mind.</li>
+			<li>The Abolition and Disability Justice Coalition created their own "<a href = "https://abolitionanddisabilityjustice.com/guiding-principles/">Guiding Principles Based in Disability Justice</a>" based on Sins Invalid's 10 principles of disability justice. </li>
+			<li><a href = "https://www.bitchmedia.org/article/reimagining-americans-with-disabilities-act-anniversary">30 Years after the ADA, It’s Time to Imagine a More Accessible Future</a> - an article for Bitch Media by Anna Hamilton that pushes for change beyond what the ADA provides in accessibility. Hamilton acknowledges how influential and important the fight for Section 504 was (led by Judy Heumann and counselors/campers/allies of Crip Camp/Camp Jened). However, she cites voices such as the Black Disability Collective that argues for combining disability and racial justice efforts and activists/journalists such as s.e. smith, who states that uprooting deeply rooted ableism from a "very limited and medicalized view of disability" and extending responsibility in enforcing and creating accessibility to a societal scale rather than an individual one are two necessary factors to achieve long-term accessibility.</li>
+			<li><strong>Twitter accounts to follow to get started (go WAY beyond these accounts): Follow everyone featured in <i>Disability Visibility. </i> Additionally, follow these: </strong> <a href = "https://twitter.com/SFdirewolf">@SFdirewolf</a> <a href = "https://twitter.com/DisVisibility">@DisVisibility</a> (Alice Wong - the editor of <i>Disability Visibility</i>), <a href = "https://twitter.com/Imani_Barbarin">@Imani_Barbarin</a> (Imani Barbarin aka Cruches&Spice), <a href = "https://twitter.com/disabilityjust1">@disabilityjust1</a> (Disability Justice Culture Club, a disabled QTPOC collective in East Oakland working on climate justice, community safety and culture change), <a href = "https://twitter.com/thellpsx">@thellpsx</a> (Leah Lakshmi Piepzna-Samarasinha), <a href = "https://twitter.com/DisabilityStor1">@DisabilityStor1</a> (Aparna Nair), <a href = "https://twitter.com/BlackDisability">@BlackDisability</a> (Black Disability Collective), <a href = "https://twitter.com/NCDJ_ASU">@NCDJ_ASU</a> (The National Center on Disability and Journalism)</li>
+		</ul>
+
+		<div id = "credits">
+			<p style = "text-align:center;"><i> made with love by <a href = "https://kwonseoyoung.webflow.io">kwon.js</a></i></p>
+		</div>
+	</body>
+
+</html>
